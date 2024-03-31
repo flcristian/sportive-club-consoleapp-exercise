@@ -15,3 +15,4 @@ D:\mycode\csharp\projects\sportive-club\sportive-club\obj\Debug\net8.0\refint\sp
 D:\mycode\csharp\projects\sportive-club\sportive-club\obj\Debug\net8.0\sportive-club.pdb
 D:\mycode\csharp\projects\sportive-club\sportive-club\obj\Debug\net8.0\sportive-club.genruntimeconfig.cache
 D:\mycode\csharp\projects\sportive-club\sportive-club\obj\Debug\net8.0\ref\sportive-club.dll
+D:\mycode\csharp\projects\sportive-club\sportive-club\obj\Debug\net8.0\sportive-club.sourcelink.json

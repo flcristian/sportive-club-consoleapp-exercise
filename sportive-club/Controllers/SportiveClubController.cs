@@ -2,6 +2,7 @@ using Medicine.Models;
 using sportive_club.Medicine.Services;
 using sportive_club.Sportsmen.Models;
 using sportive_club.Sportsmen.Services;
+using sportive_club.System.Constants;
 using sportive_club.System.Exceptions;
 
 namespace sportive_club.Controllers;
@@ -66,8 +67,6 @@ public class SportiveClubController
                     _running = false;
                     break;
             }
-            
-            DisplaySpacing();
         }
     }
 
@@ -112,16 +111,19 @@ public class SportiveClubController
             return;
         }
 
-        Sportsman sportsman = new Sportsman(-1, name, new List<Training>(), new List<string>(), type);
+        Sportsman sportsman = new Sportsman(-1, name, new List<string>(), new List<string>(), type);
 
         try
         {
             _sportsmanCommandService.CreateSportsman(sportsman);
+            Console.WriteLine(ControllerMessages.ADDED_SPORTSMAN);
         }
         catch (ItemAlreadyExists ex)
         {
             Console.WriteLine(ex.Message);
         }
+        
+        DisplaySpacing();
     }
 
     private void RemoveSportsman()
@@ -132,11 +134,14 @@ public class SportiveClubController
         try
         {
             _sportsmanCommandService.DeleteSportsmanByName(name);
+            Console.WriteLine(ControllerMessages.REMOVED_SPORTSMAN);
         }
         catch (ItemDoesNotExist ex)
         {
             Console.WriteLine(ex.Message);
         }
+        
+        DisplaySpacing();
     }
 
     private void BanMedicine()
@@ -159,11 +164,14 @@ public class SportiveClubController
         try
         {
             _medicineCommandService.BanMedicine(medicine);
+            Console.WriteLine(ControllerMessages.BANNED_MEDICINE);
         }
         catch (ItemAlreadyExists ex)
         {
             Console.WriteLine(ex.Message);
         }
+        
+        DisplaySpacing();
     }
 
     private void UnbanMedicine()
@@ -185,36 +193,111 @@ public class SportiveClubController
             
         try
         {
-            _medicineCommandService.BanMedicine(medicine);
+            _medicineCommandService.UnbanMedicine(medicine);
+            Console.WriteLine(ControllerMessages.UNBANNED_MEDICINE);
         }
         catch (ItemDoesNotExist ex)
         {
             Console.WriteLine(ex.Message);
         }
+        
+        DisplaySpacing();
     }
 
     private void AddTraining()
     {
+        Console.Write("Enter the name of the sportsman: ");
+        string name = Console.ReadLine()!;
+        Console.Write("Enter the title of the training: ");
+        string title = Console.ReadLine()!;
+
+        try
+        {
+            _sportsmanCommandService.AddTraining(name, title);
+            Console.WriteLine(ControllerMessages.ADDED_TRAINING);
+        }
+        catch (ItemDoesNotExist ex)
+        {
+            Console.WriteLine(ex.Message);
+        }
+        catch (ItemAlreadyExists ex)
+        {
+            Console.WriteLine(ex.Message);
+        }
         
+        DisplaySpacing();
     }
 
     private void RemoveTraining()
     {
+        Console.Write("Enter the name of the sportsman: ");
+        string name = Console.ReadLine()!;
+        Console.Write("Enter the title of the training: ");
+        string title = Console.ReadLine()!;
+
+        try
+        {
+            _sportsmanCommandService.RemoveTraining(name, title);
+            Console.WriteLine(ControllerMessages.REMOVED_TRAINING);
+        }
+        catch (ItemDoesNotExist ex)
+        {
+            Console.WriteLine(ex.Message);
+        }
         
+        DisplaySpacing();
     }
 
     private void ExecuteTraining()
     {
+        Console.Write("Enter the name of the sportsman: ");
+        string name = Console.ReadLine()!;
+        Console.Write("Enter the title of the training: ");
+        string title = Console.ReadLine()!;
+
+        try
+        {
+            _sportsmanCommandService.ExecuteTraining(name, title);
+        }
+        catch (ItemDoesNotExist ex)
+        {
+            Console.WriteLine(ex.Message);
+        }
         
+        DisplaySpacing();
     }
 
     private void SeeAllSportsmen()
     {
-        
+        try
+        {
+            foreach (Sportsman sportsman in _sportsmanQueryService.GetAllSportsmen())
+            {
+                Console.Write(sportsman);
+                DisplaySpacing();
+            }
+        }
+        catch (ItemsDoNotExist ex)
+        {
+            Console.WriteLine(ex.Message);
+            DisplaySpacing();
+        }
     }
 
     private void SeeSportsman()
     {
+        Console.Write("Enter the name of the sportsman: ");
+        string name = Console.ReadLine()!;
         
+        try
+        {
+            Console.WriteLine(_sportsmanQueryService.GetSportsmanByName(name));
+        }
+        catch (ItemDoesNotExist ex)
+        {
+            Console.WriteLine(ex.Message);
+        }
+        
+        DisplaySpacing();
     }
 }

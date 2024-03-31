@@ -10,16 +10,6 @@
     "Type": 1
   },
   {
-    "Id": 320,
-    "Name": "Paul",
-    "Trainings": [],
-    "BannedMedicine": [
-      "Paracetamol",
-      "Algocalmin"
-    ],
-    "Type": 1
-  },
-  {
     "Id": 86,
     "Name": "Petre",
     "Trainings": [],
@@ -28,5 +18,26 @@
       "Algocalmin"
     ],
     "Type": 1
+  },
+  {
+    "Id": 320,
+    "Name": "Paul",
+    "Trainings": [
+      "Running"
+    ],
+    "BannedMedicine": [
+      "Paracetamol",
+      "Algocalmin"
+    ],
+    "Type": 1
+  },
+  {
+    "Id": 107,
+    "Name": "Andrei",
+    "Trainings": [],
+    "BannedMedicine": [
+      "Aspirin"
+    ],
+    "Type": 3
   }
 ]
