@@ -1,0 +1,32 @@
+[
+  {
+    "Id": 997,
+    "Name": "Marius",
+    "Trainings": [],
+    "BannedMedicine": [
+      "Paracetamol",
+      "Algocalmin"
+    ],
+    "Type": 1
+  },
+  {
+    "Id": 320,
+    "Name": "Paul",
+    "Trainings": [],
+    "BannedMedicine": [
+      "Paracetamol",
+      "Algocalmin"
+    ],
+    "Type": 1
+  },
+  {
+    "Id": 86,
+    "Name": "Petre",
+    "Trainings": [],
+    "BannedMedicine": [
+      "Paracetamol",
+      "Algocalmin"
+    ],
+    "Type": 1
+  }
+]

@@ -1,0 +1,17 @@
+D:\mycode\csharp\projects\sportive-club\sportive-club\bin\Debug\net8.0\sportive-club.exe
+D:\mycode\csharp\projects\sportive-club\sportive-club\bin\Debug\net8.0\sportive-club.deps.json
+D:\mycode\csharp\projects\sportive-club\sportive-club\bin\Debug\net8.0\sportive-club.runtimeconfig.json
+D:\mycode\csharp\projects\sportive-club\sportive-club\bin\Debug\net8.0\sportive-club.dll
+D:\mycode\csharp\projects\sportive-club\sportive-club\bin\Debug\net8.0\sportive-club.pdb
+D:\mycode\csharp\projects\sportive-club\sportive-club\bin\Debug\net8.0\Newtonsoft.Json.dll
+D:\mycode\csharp\projects\sportive-club\sportive-club\obj\Debug\net8.0\sportive-club.csproj.AssemblyReference.cache
+D:\mycode\csharp\projects\sportive-club\sportive-club\obj\Debug\net8.0\sportive-club.GeneratedMSBuildEditorConfig.editorconfig
+D:\mycode\csharp\projects\sportive-club\sportive-club\obj\Debug\net8.0\sportive-club.AssemblyInfoInputs.cache
+D:\mycode\csharp\projects\sportive-club\sportive-club\obj\Debug\net8.0\sportive-club.AssemblyInfo.cs
+D:\mycode\csharp\projects\sportive-club\sportive-club\obj\Debug\net8.0\sportive-club.csproj.CoreCompileInputs.cache
+D:\mycode\csharp\projects\sportive-club\sportive-club\obj\Debug\net8.0\sportive-club.csproj.CopyComplete
+D:\mycode\csharp\projects\sportive-club\sportive-club\obj\Debug\net8.0\sportive-club.dll
+D:\mycode\csharp\projects\sportive-club\sportive-club\obj\Debug\net8.0\refint\sportive-club.dll
+D:\mycode\csharp\projects\sportive-club\sportive-club\obj\Debug\net8.0\sportive-club.pdb
+D:\mycode\csharp\projects\sportive-club\sportive-club\obj\Debug\net8.0\sportive-club.genruntimeconfig.cache
+D:\mycode\csharp\projects\sportive-club\sportive-club\obj\Debug\net8.0\ref\sportive-club.dll
